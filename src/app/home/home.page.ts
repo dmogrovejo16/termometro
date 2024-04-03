@@ -13,8 +13,8 @@ valor:any;
     object(route).subscribe(attributes => {
       const valores_db = attributes.snapshot.val();
       console.log(valores_db);
-    this.valor=100-valores_db.valor;
-    console.log(this.valor);
+      this.valor=100-valores_db.valor;
+      console.log(this.valor);
 
     });
   }
