@@ -1,0 +1,47 @@
+
+ion-content{
+  --ion-background-color:#000000;
+}
+
+.termometro{
+  height: 100%;
+  width: 2rem;
+  background: linear-gradient(red, blue);
+  background-size: auto;
+  position: relative;
+  border-radius: 1rem;
+}
+
+
+.tapa::after {
+  content: ""; /* Contenido del pseudo-elemento */
+  position: absolute; /* Posición absoluta para colocar el pseudo-elemento */
+  bottom: 0; /* Coloca el pseudo-elemento en la parte inferior */
+  left: 0; /* Coloca el pseudo-elemento en la parte izquierda */
+  width: 100%; /* Ancho del pseudo-elemento al 100% del contenedor */
+  height: 2rem; /* Altura del pseudo-elemento (radio del semicírculo) */
+  background-color: rgba(0, 0, 255, 0); /* Color de fondo del pseudo-elemento igual al del contenedor */
+  border-top-left-radius: 2rem; /* Radio del semicírculo en la esquina superior izquierda */
+  border-top-right-radius: 2rem; /* Radio del semicírculo en la esquina superior derecha */
+}
+
+.tapa{
+  border-bottom-left-radius: -1rem;
+  position: absolute;
+  background: rgb(2, 0, 0);
+  align-self: flex-start;
+  width: 2rem;
+  overflow: hidden; /* Oculta el exceso de contenido */
+  height: 2rem;
+}
+
+
+.cont{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  height: 100%;
+}
